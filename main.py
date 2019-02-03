@@ -1,8 +1,5 @@
-from lib import cashback
-from lib import bmi
+from lib import cashback, bmi
 
-print('our program')
-# value = cashback(10000)
-# print(value)
+# print('our program')
 print(cashback(10000))
 print(bmi(106, 1.68))
