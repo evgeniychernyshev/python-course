@@ -1,9 +1,6 @@
-from calc_rollscount_lib import calculate_rolls_count
+from calc_distance_lib import calculate_distance
 
-roll_length = float(input('Enter roll length (m): '))
-roll_width = float(input('Enter roll width (m): '))
-room_length = float(input('Enter room length (m): '))
-room_width = float(input('Enter room width (m): '))
-ceiling_height = float(input('Enter ceiling height (m): '))
-rolls_count = calculate_rolls_count(roll_length, roll_width, room_length, room_width, ceiling_height)
-print('You need', rolls_count, 'rolls. We recommend buy 1-2 rolls more.')
+fuel_consumption = float(input('Enter fuel consumption (liters per 100 km): '))
+fuel_remaining_amount = float(input('Enter fuel remaining amount: '))
+distance = calculate_distance(fuel_consumption, fuel_remaining_amount)
+print('Remaining distance is', distance, 'km')
